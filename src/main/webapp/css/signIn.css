@@ -1,0 +1,22 @@
+.signInBox {
+    position: absolute;
+    top: 100px;
+    width: 200px;
+    height: auto;
+}
+
+.languageBox{
+    position: absolute;
+    width: 100px;
+}
+
+.headerLogo{
+    fonst-size: 30px;
+    position: absolute;
+    color: blueviolet;
+    background: azure;
+    top:0;
+    left: 0;
+    right: 0;
+    object-position: center;
+}
