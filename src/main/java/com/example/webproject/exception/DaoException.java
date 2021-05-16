@@ -1,8 +1,7 @@
 package com.example.webproject.exception;
 
 public class DaoException extends Exception{
-    public DaoException() {
-    }
+    public DaoException() { }
 
     public DaoException(String message) {
         super(message);

@@ -14,4 +14,30 @@
         <filter-name>EncodingFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
+    <jsp-config>
+        <taglib>
+            <taglib-uri>userListTable</taglib-uri>
+            <taglib-location>/WEB-INF/tld/customTag.tld</taglib-location>
+        </taglib>
+        <taglib>
+            <taglib-uri>debtorsTable</taglib-uri>
+            <taglib-location>/WEB-INF/tld/customTag.tld</taglib-location>
+        </taglib>
+        <taglib>
+            <taglib-uri>blockedUserTable</taglib-uri>
+            <taglib-location>/WEB-INF/tld/customTag.tld</taglib-location>
+        </taglib>
+        <taglib>
+            <taglib-uri>tariffsTable</taglib-uri>
+            <taglib-location>/WEB-INF/tld/customTag.tld</taglib-location>
+        </taglib>
+        <taglib>
+            <taglib-uri>homePageTable</taglib-uri>
+            <taglib-location>/WEB-INF/tld/customTag.tld</taglib-location>
+        </taglib>
+    </jsp-config>
+    <context-param>
+        <param-name>upload.location</param-name>
+        <param-value>D:\JavaWebProject\src\main\webapp\image\tariffImage</param-value>
+    </context-param>
 </web-app>

@@ -43,5 +43,6 @@
     <orderEntry type="library" scope="TEST" name="Maven: aopalliance:aopalliance:1.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.google.guava:guava:19.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.yaml:snakeyaml:1.21" level="project" />
+    <orderEntry type="library" name="jsp-api" level="project" />
   </component>
 </module>

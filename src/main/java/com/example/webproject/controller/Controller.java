@@ -16,7 +16,6 @@ import javax.servlet.annotation.*;
 @WebServlet(name = "servlet", urlPatterns = "/controller")
 public class Controller extends HttpServlet {
 
-
     public void init() { }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {

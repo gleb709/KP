@@ -4,52 +4,107 @@
 
 <fmt:setLocale value="${sessionScope.locale}"/>
 <fmt:setBundle basename="property.language"/>
+<link rel="stylesheet" href="${pageContext.request.contextPath}/css/signUp5.css">
+
 <html>
 <head>
-    <link rel="stylesheet" href="css/signUp.css">
     <title>SignUp</title>
 </head>
 <body>
-    <jsp:include page="header/locale.jsp"/>
+<c:choose>
+    <c:when test="${accountRole.equals('mainAdmin')}">
+        <jsp:include page="header/mainAdmin.jsp"/>
+    </c:when>
+    <c:when test="${accountRole.equals('admin')}">
+        <jsp:include page="header/admin.jsp"/>
+    </c:when>
+</c:choose>
     <c:set var="postTime" value="<%= (new java.util.Date()).getTime()%>" scope="page"/>
-    <div class="signUpBox">
-        <form action="controller" method="post">
-            <label><fmt:message key="label.login"/></label>
-            <c:if test="${incorrectData.contains('login')}">
-                <label><fmt:message key="label.incorrectLogin"/> </label>
-            </c:if>
-            <input type="text" name="login" placeholder="<fmt:message key="helpMessage.enterLogin"/>"/>
-            <label><fmt:message key="label.password"/></label>
-            <c:if test="${incorrectData.contains('password')}">
-                <label><fmt:message key="label.incorrectPassword"/> </label>
-            </c:if>
-            <input type="password" name="password" placeholder="<fmt:message key="helpMessage.enterPassword"/>"/>
-            <label><fmt:message key="label.repeatPassword"/></label>
-            <c:if test="${incorrectData.contains('repeatPassword')}">
-                <label><fmt:message key="label.incorrectRepeatPassword"/></label>
-            </c:if>
-            <input type="password" name="repeatPassword"  placeholder="<fmt:message key="helpMessage.repeatPassword"/>"/>
-            <label><fmt:message key="label.personalInformation"/></label>
-            <input type="text" name="firstName" placeholder="<fmt:message key="helpMessage.firstName"/>">
-            <c:if test="${incorrectData.contains('firstName')}">
-                <fmt:message key="label.incorrectFirstName"/>
-            </c:if>
-            <input type="text" name="lastName" placeholder="<fmt:message key="helpMessage.lastName"/>"/>
-            <c:if test="${incorrectData.contains('lastName')}">
-                <fmt:message key="label.incorrectLastName"/>
-            </c:if>
-            <input type="text" name="creditCardNumber" placeholder="<fmt:message key="helpMessage.creditCardNumber"/>"/>
-            <c:if test="${incorrectData.contains('creditCard')}">
-                <fmt:message key="label.incorrectCreditCard"/>
-            </c:if>
-            <input type="text" name="email" placeholder="<fmt:message key="helpMessage.Email"/>"/>
-            <c:if test="${incorrectData.contains('email')}">
-                <fmt:message key="label.incorrectEmail"/>
-            </c:if>
-            <input type="submit" name="SignUp" value="<fmt:message key="button.signUp"/>"/>
-            <input type="hidden" name="command" value="SIGN_UP">
-            <input type="hidden" name="postTime" value="${postTime}">
-        </form>
-    </div>
+            <form action="controller" method="post">
+                <div class="signUpBox">
+                <div class="signUpWindow">
+                <div class="box">
+                    <c:if test="${incorrectData.contains('login')}">
+                        <label class="incorrectKey"><fmt:message key="label.incorrectLogin"/> </label>
+                    </c:if>
+                    <c:if test="${!incorrectData.contains('login')}">
+                        <label class="incorrectKey"><fmt:message key="label.login"/></label>
+                    </c:if>
+                    <input class="inputText" type="text" name="login" placeholder="<fmt:message key="helpMessage.enterLogin"/>"/>
+                    <c:if test="${incorrectData.contains('password')}">
+                        <p/>
+                        <label class="incorrectKey"><fmt:message key="label.incorrectPassword"/> </label>
+                    </c:if>
+                    <c:if test="${!incorrectData.contains('password')}">
+                        <p/>
+                            <label class="incorrectKey"><fmt:message key="label.password"/> </label>
+                    </c:if>
+                    <input class="inputText" type="password" name="password" placeholder="<fmt:message key="helpMessage.enterPassword"/>"/>
+                    <c:if test="${incorrectData.contains('repeatPassword')}">
+                        <p/>
+                        <label class="incorrectKey"><fmt:message key="label.incorrectRepeatPassword"/></label>
+                    </c:if>
+                    <c:if test="${!incorrectData.contains('repeatPassword')}">
+                        <p/>
+                        <label class="incorrectKey"><fmt:message key="label.repeatPassword"/></label>
+                    </c:if>
+                    <input class="inputText" type="password" name="repeatPassword"  placeholder="<fmt:message key="helpMessage.repeatPassword"/>"/>
+                    <c:if test="${incorrectData.contains('email')}">
+                        <p/>
+                        <label class="incorrectKey"><fmt:message key="label.incorrectEmail"/></label>
+                    </c:if>
+                    <c:if test="${!incorrectData.contains('email')}">
+                        <p/>
+                        <label class="incorrectKey"><fmt:message key="label.email"/></label>
+                    </c:if>
+                    <input class="inputText" type="text" name="email" placeholder="<fmt:message key="helpMessage.Email"/> "/>
+                    <p>
+                        <input class="signUpButton" type="submit" name="SignUp" value="<fmt:message key="button.signUp"/>"/>
+                        <input type="hidden" name="command" value="SIGN_UP">
+                        <input type="hidden" name="role" value="user"/>
+                        <input type="hidden" name="postTime" value="${postTime}">
+                    </p>
+                </div>
+                <div class="box">
+                    <c:if test="${incorrectData.contains('firstName')}">
+                        <label class="incorrectKey">
+                            <fmt:message key="label.incorrectFirstName"/>
+                        </label>
+                    </c:if>
+                    <c:if test="${!incorrectData.contains('firstName')}">
+                            <label class="incorrectKey"><fmt:message key="label.firstName"/></label>
+                    </c:if>
+                    <input class="inputText" type="text" name="firstName" placeholder="<fmt:message key="helpMessage.firstName"/> ">
+                    <c:if test="${incorrectData.contains('lastName')}">
+                        <p/>
+                        <label class="incorrectKey"><fmt:message key="label.incorrectLastName"/></label>
+                    </c:if>
+                    <c:if test="${!incorrectData.contains('lastName')}">
+                        <p/>
+                        <label class="incorrectKey"><fmt:message key="label.lastName"/></label>
+                    </c:if>
+                    <input class="inputText" type="text" name="lastName" placeholder="<fmt:message key="helpMessage.lastName"/> "/>
+                    <c:if test="${incorrectData.contains('contractNumber')}">
+                        <p/>
+                        <label class="incorrectKey"><fmt:message key="label.incorrectContractNumber"/></label>
+                    </c:if>
+                    <c:if test="${!incorrectData.contains('contractNumber')}">
+                        <p/>
+                        <label class="incorrectKey"><fmt:message key="label.contractNumber"/></label>
+                    </c:if>
+                    <input class="inputText" type="text" name="contractNumber" placeholder="<fmt:message key="helpMessage.contractNumber"/> "/>
+                    <c:if test="${incorrectData.contains('phoneNumber')}">
+                        <p/>
+                        <label class="incorrectKey"><fmt:message key="label.incorrectPhoneNumber"/></label>
+                    </c:if>
+                    <c:if test="${!incorrectData.contains('phoneNumber')}">
+                        <p/>
+                        <label class="incorrectKey"><fmt:message key="label.phoneNumber"/></label>
+                    </c:if>
+                    <input class="inputText" type="text" name="phoneNumber" placeholder="<fmt:message key="helpMessage.phoneNumber"/> "/>
+                </div>
+                </div>
+                </div>
+            </form>
 </body>
 </html>
