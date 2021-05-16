@@ -1,0 +1,194 @@
+.window {
+    display: flex;
+}
+
+body{
+    background: linear-gradient(to bottom right, #410175, black);
+}
+
+.infoLabel{
+    margin-left: 40%;
+    width: 50%;
+    font-size: 200%;
+    font-weight: 700;
+    color: dimgray;
+}
+
+.tableWindow{
+    margin-left: 5%;
+    margin-top: 2%;
+    width: 1200px;
+    height: 750px;
+}
+
+.prodCount{
+    height: 100%;
+    width: 50%;
+    border: none;
+    font-size: 150%;
+    font-weight: 700;
+    border-left: 2px solid silver;
+}
+
+.prodSubmit{
+    height: 100%;
+    width: 50%;
+    border: none;
+    font-size: 100%;
+    font-weight: 800;
+}
+
+.infoSubmit{
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 150%;
+    font-weight: 700;
+    background-color: transparent;
+}
+
+.infoButton{
+    align-items: center;
+    height: 100%;
+    width: 80%;
+}
+
+
+.prodButton{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 20%;
+}
+
+.products{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width: 1050px;
+    height: 600px;
+    margin-top: 3%;
+    margin-left: 6%;
+}
+
+.prodInfo{
+    height: 100%;
+    width: 80%;
+}
+
+.productBox:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    outline: none !important;
+}
+
+.prodSubmit:hover{
+    background-color: orange;
+}
+
+.prodSubmit:after{
+    outline: none !important;
+}
+
+.productBox:after{
+    outline: none !important;
+}
+
+.prodCount:after{
+    outline: none !important;
+}
+
+.productBox{
+    width: 1050px;
+    height: 60px;
+    margin-bottom: 2px;
+    display: flex;
+    border-bottom: 2px solid silver;
+}
+
+.tableNavigation{
+    display: flex;
+    margin-top: 5%;
+    margin-left: 70%;
+    height: 35px;
+    width: 300px;
+}
+
+.navLabel{
+    font-size: 120%;
+    font-weight: 700;
+    color: dimgray;
+}
+
+.navForm{
+    margin: 0;
+}
+
+.nav_button{
+    height: 100%;
+    width: 80px;
+    margin-left: 5px;
+    border: none;
+}
+
+.nav_button:hover{
+    background-color: orange;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    outline: none !important;
+}
+
+.nav_button:after{
+    outline: none !important;
+}
+
+.tariffImage{
+    width: 100%;
+    height: 70%;
+}
+
+.actionForm1{
+    margin: 0;
+}
+
+.buyButton{
+    width: 100%;
+    height: 15%;
+    border: none;
+    font-weight: 700;
+    font-size: 120%;
+    color: Black;
+    background-color: dimgray;
+}
+
+.priceLabel{
+    color: dimgray;
+    width: 100%;
+    margin-left: 15%;
+    height: 20%;
+    font-size: 130%;
+    font-weight: 700;
+}
+
+.buyButton:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color: orange;
+}
+
+.tariffs{
+    display: flex;
+    width: 80%;
+    height: 40%;
+    margin-left: 22%;
+    margin-top: 8%;
+}
+
+
+.tariffBox{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width: 25%;
+    margin-left: 7%;
+    height: 100%;
+}
+
+
+
+
+

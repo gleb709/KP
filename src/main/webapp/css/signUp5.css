@@ -1,0 +1,72 @@
+body{
+    background: linear-gradient(to bottom right, #410175, black);
+}
+
+.signUpBox{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    height: 75%;
+}
+
+.signUpWindow{;
+    height: 85%;
+    width: 95%;
+    padding-left: 5%;
+    padding-top: 5%;
+    display: flex;
+}
+
+.signUpInfo{
+    display: flex;
+}
+
+.box{
+    width: 40%;
+    height: 100%;
+    margin-left: 5%;
+}
+
+.signUpButton{
+    border-radius: 15px;
+    border-color: darkgray;
+    width: 65%;
+    height: 8%;
+    font-weight: 700;
+    margin-left: 65%;
+    margin-top:7%;
+}
+
+.inputText{
+    width: 95%;
+    height: 8%;
+    border-radius: 15px;
+    border-color: azure;
+    margin-top: 5%;
+    background-color: silver;
+    font-weight: 700;
+}
+
+.incorrectKey{
+    padding-left: 3%;
+    font-size: 15px;
+    font-weight: 700;
+    color: silver;
+    width: 90%;
+}
+
+.signUpButton:hover{
+    border-color: azure;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.signUpButton:focus{
+    outline: none !important;
+}
+
+.inputText:focus{
+    outline: none !important;
+}
+
+

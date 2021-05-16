@@ -1,0 +1,280 @@
+body{
+    margin:0;
+    background: linear-gradient(to bottom right, #410175, black);
+}
+
+.userInfoBox{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    height: 60%;
+}
+
+.info{
+    padding-top: 3%;
+    margin-left: 5%;
+    font-size: 150%;
+    font-weight: 900;
+    text-align: left;
+    color: silver;
+}
+
+hr{
+    height: 2px;
+    background: linear-gradient(to left, black, white);
+    border: none;
+    border-bottom: dimgray;
+    margin-bottom: 0;
+}
+
+.nav_img{
+    width: 30%;
+    height: 100%;
+}
+
+.navigationForm{
+    margin: 0;
+    width: 100%;
+
+    transition: border-color.2s;
+    background-color: transparent;
+}
+
+.navButton{
+    width: 70%;
+    background-color: transparent;
+    border: none;
+    font-weight: 15px;
+    font-size: 0.9rem!important;
+    color: dimgray;
+}
+
+.navigationButton{
+    width: auto;
+    display: flex;
+    background-color: transparent;
+    border-bottom: 2px solid gray;
+}
+
+.navButton:focus{
+    outline: none !important;
+}
+
+.navigationButton:hover {
+    border-top: 2px solid whitesmoke;
+    border-bottom: 2px solid whitesmoke;
+    color: whitesmoke;
+    outline: none !important;
+}
+
+.navigationList{
+    width: 30%;
+}
+
+.box{
+    display: flex;
+    margin-bottom: 2%;
+    align-items: stretch;
+}
+
+.tariffText{
+    width: 300px;
+    border-radius: 15px;
+    border-color: azure;
+    background-color: silver;
+    font-weight: 700;
+}
+
+.tariffLabel{
+    margin-left: 20%;
+    padding-top: 1%;
+    font-size: 120%;
+    font-weight: 700;
+    width: 80%;
+    color: dimgray;
+}
+
+.addTariffWindow{
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.addTariffForm{
+    margin-top: 5%;
+    justify-content: space-between;
+}
+
+.infoBox{
+    display: flex;
+}
+
+.infoLabel{
+    margin-left: 10%;
+    padding-top: 1%;
+    width: 50%;
+    font-size: 120%;
+    font-weight: 700;
+    color: dimgray;
+}
+
+.infoPart{
+    margin-top: 3%;
+    margin-left: 30%;
+    width: 40%;
+    font-size: 120%;
+    font-weight: 700;
+    color: dimgray;
+}
+
+.nav_button:focus{
+    outline: none !important;
+}
+
+.nav_button:hover{
+    color: azure;
+}
+
+.navForm{
+    padding-right: 5%;
+}
+
+.tableLabel{
+    color: gray;
+    text-align: center;
+    font-size: 100%;
+    font-weight: 600;
+}
+
+.nav_button{
+    font-size: 80%;
+    font-weight: 500;
+}
+
+.actionBox{
+    top: 75%;
+    margin-left: 2%;
+    position: absolute;
+
+}
+
+.actionForm{
+    margin-bottom: 2%;
+}
+
+.listButton{
+    width: 170px;
+    height: 30px;
+    border-radius: 15px;
+    border-color: darkgray;
+    font-size: 80%;
+    font-weight: 700;
+}
+
+.listText{
+    height: 30px;
+    border-radius: 15px;
+    border-color: darkgray;
+    font-weight: 700;
+}
+
+.listButton:hover {
+    border-top: 2px solid whitesmoke;
+    border-bottom: 2px solid whitesmoke;
+    background-color: whitesmoke;
+    outline: none !important;
+}
+
+.listButton:focus{
+    outline: none !important;
+}
+
+.tariffText:focus{
+    outline: none !important;
+}
+
+.textArea{
+    resize: none;
+    width: 50%;
+    font-size: 120%;
+    font-weight: 700;
+    background-color: silver;
+
+}
+
+.addTariffButton{
+    border-radius: 15px;
+    border-color: darkgray;
+    width: 50%;
+    height: 10%;
+    font-weight: 500;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+.uploadButton{
+    border-radius: 15px;
+    border-color: darkgray;
+    width: 50%;
+    height: 10%;
+    font-weight: 500;
+    margin-left: 20%;
+}
+
+input[type="file"] {
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+    border: 0;
+    overflow: hidden;
+    position: absolute;
+}
+
+.input_file{
+    color:silver;
+    font-weight: 600;
+}
+
+.input_file:hover{
+    color:grey;
+}
+
+.textArea:hover{
+    outline: none !important;
+}
+
+.imageButton:hover{
+    outline: none !important;
+}
+
+.addTariffButton{
+    outline: none !important;
+}
+
+.uploadButton{
+    outline: none !important;
+}
+
+.imageButton{
+    background-color: transparent;
+    font-size: 15px;
+    color: darkgray;
+    margin-left: 5%;
+}
+
+.imageButton:hover{
+    outline: none !important;
+}
+
+.uploadBox{
+    margin-top: 2%;
+}
+
+.upload{
+    display: flex;
+}
+
+.uploadForm{
+    margin-top: 0;
+}

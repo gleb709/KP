@@ -1,0 +1,136 @@
+body{
+    margin:0;
+    background: linear-gradient(to bottom right, #410175, black);
+}
+
+.transactionBox{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    height: 60%;
+}
+
+.info{
+    padding-top: 3%;
+    margin-left: 5%;
+    font-size: 150%;
+    font-weight: 900;
+    text-align: left;
+    color: silver;
+}
+
+hr{
+    height: 2px;
+    background: linear-gradient(to left, black, white);
+    border: none;
+    border-bottom: dimgray;
+    margin-bottom: 0;
+}
+
+.nav_img{
+    width: 30%;
+    height: 100%;
+}
+
+.navigationForm{
+    margin: 0;
+    width: 100%;
+
+    transition: border-color.2s;
+    background-color: transparent;
+}
+
+.navButton{
+    width: 70%;
+    background-color: transparent;
+    border: none;
+    font-weight: 15px;
+    font-size: 0.9rem!important;
+    color: dimgray;
+}
+
+.navigationButton{
+    width: auto;
+    display: flex;
+    background-color: transparent;
+    border-bottom: 2px solid gray;
+}
+
+.navButton:focus{
+    outline: none !important;
+}
+
+.changePassText:focus{
+    outline: none !important;
+}
+
+.navigationButton:hover {
+    border-top: 2px solid whitesmoke;
+    border-bottom: 2px solid whitesmoke;
+    color: whitesmoke;
+    outline: none !important;
+}
+
+.changePassButton:hover {
+    border-top: 2px solid whitesmoke;
+    border-bottom: 2px solid whitesmoke;
+    color: whitesmoke;
+    outline: none !important;
+}
+
+.navigationList{
+    width: 30%;
+    height: 85%;
+}
+
+.transactionWindow{
+    width: 70%;
+}
+
+.box{
+    display: flex;
+    align-items: stretch;
+}
+
+.transactionForm {
+    margin-left: 25%;
+}
+.transactionText{
+    width: 120%;
+    height: 60%;
+    border-radius: 15px;
+    border-color: azure;
+    margin-top: 4%;
+    background-color: silver;
+    font-weight: 700;
+}
+
+.transactionButton {
+    border-radius: 15px;
+    border-color: darkgray;
+    width: 70%;
+    height: 60%;
+    font-weight: 700;
+    margin-left: 25%;
+    margin-top: 4%;
+}
+
+.t_box{
+    padding-top: 7%;
+}
+
+.transaction_box{
+    padding-top: 3%;
+    width: 60%;
+    height: 15%;
+}
+
+.transactionLabel{
+    margin-left: 5%;
+    padding-top: 1%;
+    width: 50%;
+    font-size: 90%;
+    font-weight: 700;
+    color: dimgray;
+}

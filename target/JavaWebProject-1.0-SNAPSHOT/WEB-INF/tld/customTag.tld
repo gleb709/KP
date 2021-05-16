@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+        version="2.1">
+
+    <tlib-version>1.0</tlib-version>
+    <short-name>ul</short-name>
+    <uri>userList</uri>
+
+    <tag>
+        <name>userListTable</name>
+        <tag-class>com.example.webproject.customTag.UserTable</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+    <tag>
+        <name>homePageTable</name>
+        <tag-class>com.example.webproject.customTag.HomePageTable</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+    <tag>
+        <name>adminListTable</name>
+        <tag-class>com.example.webproject.customTag.AdminTable</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+    <tag>
+        <name>debtorsTable</name>
+        <tag-class>com.example.webproject.customTag.DebtorsTable</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+    <tag>
+        <name>blockedUserTable</name>
+        <tag-class>com.example.webproject.customTag.BlockedUserTable</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+    <tag>
+        <name>tariffsTable</name>
+        <tag-class>com.example.webproject.customTag.tariffTable</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+</taglib>

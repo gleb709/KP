@@ -1,0 +1,36 @@
+.method-in-group{
+    width: auto;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 5%;
+}
+
+.summary_label{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    color: silver;
+    background-color: dimgray;
+    border: none;
+}
+
+.summary:focus{
+    outline: none !important;
+}
+
+.active_button {
+    width: 100px;
+    height: 50px;
+    border: none;
+    font-size: 15px;
+}
+
+.active_button:hover{
+    background-color: blueviolet;
+}
+
+.formButton{
+    margin: 0;
+}

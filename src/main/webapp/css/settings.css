@@ -1,0 +1,71 @@
+body{
+    margin:0;
+    background: linear-gradient(to bottom right, #410175, black);
+}
+
+.settings{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    height: 500px;
+}
+
+.settingsInfo{
+    padding-top: 3%;
+    margin-left: 5%;
+    font-size: 150%;
+    font-weight: 900;
+    text-align: left;
+    color: silver;
+}
+
+hr{
+    height: 2px;
+    background: linear-gradient(to left, black, white);
+    border: none;
+    border-bottom: dimgray;
+    margin-bottom: 0;
+}
+
+.settings_img{
+    width: 30%;
+    height: 100%;
+}
+
+.settingsForm{
+    margin: 0;
+    transition: border-color.2s;
+    background-color: transparent;
+}
+
+.settingButton{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 100%;
+    font-weight: 700;
+    color: dimgray;
+}
+
+.settingsButton{
+    width: 100%;
+    display: flex;
+    background-color: transparent;
+    border-bottom: 2px solid gray;
+}
+
+.settingsButton:hover{
+    outline: none !important;
+}
+
+.settingsButton:hover {
+    border-top: 2px solid whitesmoke;
+    border-bottom: 2px solid whitesmoke;
+    color: whitesmoke;
+}
+
+.settingsList{
+    width: 20%;
+    height: 85%;
+}

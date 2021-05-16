@@ -1,0 +1,90 @@
+body{
+    background: linear-gradient(to bottom right, #410175, black);
+}
+
+.confirmationBox{
+    margin-top: 6%;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+}
+
+.inputText{
+    width: 300px;
+    height: 35px;
+    border-radius: 15px;
+    border-color: azure;
+    margin-top: 5%;
+    background-color: silver;
+    font-weight: 700;
+}
+
+.box_gears{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15%;
+}
+
+.box{
+    width: 320px;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.confirmationForm{
+    width: 100%;
+}
+
+hr{
+    height: 2px;
+    background: linear-gradient(to left, black, white);
+    border: none;
+}
+
+.confirmationInfo{
+    margin-left: 5%;
+    font-size: 150%;
+    font-weight: 900;
+    text-align: left;
+    color: silver;
+}
+
+.incorrectKey{
+    font-size: 15px;
+    font-weight: 700;
+    color: silver;
+}
+
+.confirmationBox{
+    height: 400px;
+    border: 3px solid;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color: transparent;
+}
+
+.confirmationButton{
+    margin-top: 4%;
+    margin-bottom: 5%;
+    margin-left: 20%;
+    border-radius: 15px;
+    border-color: darkgray;
+    width: 50%;
+    height: 15%;
+    background-color: silver;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.confirmationButton:hover{
+    border-color: azure;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.confirmationButton:focus{
+    outline: none !important;
+}
+
+.inputText:focus{
+    outline: none !important;
+}
